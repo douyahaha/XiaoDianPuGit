@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.douya.XiaoDianPuXM.activity.RegActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_color">
+        <ImageView
+            android:id="@+id/iv_regBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:text="注册新用户"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_regName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:hint="请输入手机号/邮箱/会员名"/>
+    <EditText
+        android:id="@+id/et_regPwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:hint="请输入密码"/>
+
+    <EditText
+        android:id="@+id/et_regAgainPwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:hint="请再次输入密码" />
+
+    <EditText
+        android:id="@+id/et_regEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:hint="请输入邮箱"/>
+    <Button
+        android:id="@+id/bt_regCommit"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="提交注册"
+        android:textColor="#ffffff"
+        android:background="@drawable/but_shape"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

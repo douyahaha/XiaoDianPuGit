@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#ff0000">
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="注销"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:layout_gravity="center"
+        android:background="@drawable/but_shape"/>
+</LinearLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/homepage_s" android:state_selected="true"></item>
-    <item android:drawable="@drawable/homepage"></item>
+    <item android:drawable="@drawable/uik_nav_home_selected" android:state_checked="true"></item>
+    <item android:drawable="@drawable/uik_nav_home_normal" android:state_focused="true" />
+    <item android:drawable="@drawable/uik_nav_home_normal"></item>
 </selector>

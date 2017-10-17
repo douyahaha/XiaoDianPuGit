@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/my_s" android:state_selected="true"></item>
-    <item android:drawable="@drawable/my"></item>
+    <item android:drawable="@drawable/uik_nav_my_selected" android:state_checked="true"></item>
+    <item android:drawable="@drawable/uik_nav_my_normal" android:state_focused="true" />
+    <item android:drawable="@drawable/uik_nav_my_normal"></item>
 </selector>
