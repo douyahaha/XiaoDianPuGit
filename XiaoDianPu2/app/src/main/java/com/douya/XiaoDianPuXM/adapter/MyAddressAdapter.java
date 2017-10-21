@@ -58,7 +58,8 @@ public class MyAddressAdapter extends RecyclerView.Adapter<MyAddressAdapter.MyAd
             addInfo = (TextView) itemView.findViewById(R.id.tv_addInfo);
         }
     }
+    private OnItemClickListener listener;
     public interface OnItemClickListener{
-        
+
     }
 }
