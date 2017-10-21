@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6e6e6"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/iv_popGoodImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_popGoodsNmae"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="恍恍惚惚好" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_popGoodsPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="hhhhhh"
+                    android:textColor="@color/colorPrice" />
+                <TextView
+                    android:id="@+id/tv_popGoodStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="库存"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="购买数量："/>
+        <ImageView
+            android:id="@+id/iv_popJia"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/jia"/>
+        <TextView
+            android:id="@+id/tv_popCount"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="1"/>
+        <ImageView
+            android:id="@+id/iv_popJian"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/jian"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/bt_popShoppingCart"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/but_shape"
+            android:text="加入购物车"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/bt_popPay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/but_shape"
+            android:text="立即购买"
+            android:textColor="#ffffff"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

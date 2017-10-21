@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="购物车"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/bg_color"/>
+
+        <ExpandableListView
+            android:id="@+id/elv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ></ExpandableListView>
+        <TextView
+            android:id="@+id/tv_tiShi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="亲，购物车为空\n赶紧去逛逛吧"/>
+
+    <LinearLayout
+        android:id="@+id/linear_total"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/cb_total"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:button="@drawable/select_checkbox"
+            android:focusable="false"/>
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="合计：￥"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/bt_total"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_color"
+            android:text="结算（0）"/>
+    </LinearLayout>
+
+</LinearLayout>

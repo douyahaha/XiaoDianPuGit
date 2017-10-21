@@ -6,13 +6,71 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.douya.XiaoDianPuXM.activity.SelectActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:background="@mipmap/back"/>
+            android:id="@+id/iv_selectBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@mipmap/leftjian" />
+
+        <EditText
+            android:id="@+id/et_goodsName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入商品名称"
+            />
+
+        <Button
+            android:id="@+id/bt_select"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/but_shape"
+            android:text="搜索"
+            android:textColor="#ffffff" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/history" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="历史记录"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="清空历史记录"/>
 </LinearLayout>

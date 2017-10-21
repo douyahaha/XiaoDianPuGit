@@ -2,7 +2,6 @@ package com.douya.XiaoDianPuXM.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +12,7 @@ import com.douya.XiaoDianPuXM.R;
 import com.douya.XiaoDianPuXM.presenter.LoginPresenterImpl;
 import com.douya.XiaoDianPuXM.view.LoginViewInterface;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener,LoginViewInterface {
+public class LoginActivity extends BaseActivity implements View.OnClickListener,LoginViewInterface {
 
     private EditText et_name;
     private EditText et_pwd;

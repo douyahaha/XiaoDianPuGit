@@ -4,15 +4,16 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@color/colorPblBackground"
         >
         <TextView
             android:layout_width="8dp"
             android:layout_height="50dp"
             android:background="@color/colorPrice"
-            android:layout_margin="10dp"
+            android:layout_margin="8dp"
             />
         <TextView
             android:id="@+id/tv_TwoType"
@@ -23,12 +24,12 @@
             android:layout_marginTop="20dp"
             android:text="hhhhhhh"/>
     </LinearLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/gv_san"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        >
+        android:layout_marginLeft="20dp">
 
     </android.support.v7.widget.RecyclerView>
 

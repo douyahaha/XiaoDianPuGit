@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.douya.XiaoDianPuXM.activity.AddressRequestActivity">
+    <EditText
+        android:id="@+id/et_addressName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入真实姓名"/>
+    <EditText
+        android:id="@+id/et_addressPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号码"/>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入地址"/>
+    <EditText
+        android:id="@+id/et_addressInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入描述信息"/>
+    <Button
+        android:id="@+id/bt_addressCommit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:background="@drawable/but_shape"
+        android:text="提交地址信息"/>
+</LinearLayout>

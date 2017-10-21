@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <CheckBox
+        android:id="@+id/cb_parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:button="@drawable/select_checkbox"
+        android:focusable="false"
+        />
+    <TextView
+        android:id="@+id/tv_parentName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="店铺名称"
+        android:textSize="20sp"
+        android:gravity="center_vertical"/>
+</LinearLayout>

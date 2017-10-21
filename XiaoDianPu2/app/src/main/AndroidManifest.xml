@@ -9,7 +9,7 @@
         android:name=".app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/icon"
-        android:label="@string/app_nameone"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -24,7 +24,12 @@
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.RegActivity" />
-        <activity android:name=".activity.SelectActivity"></activity>
+        <activity android:name=".activity.SelectActivity" />
+        <activity android:name=".activity.SelectResultActivity" />
+        <activity android:name=".activity.GoodsActivity" />
+        <activity android:name=".activity.AddressActivity" />
+        <activity android:name=".activity.AddressRequestActivity" />
+        <activity android:name=".activity.IndentActivity"></activity>
     </application>
 
 </manifest>

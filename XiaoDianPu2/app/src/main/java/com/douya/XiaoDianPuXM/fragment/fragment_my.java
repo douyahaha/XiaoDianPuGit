@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.douya.XiaoDianPuXM.R;
+import com.douya.XiaoDianPuXM.activity.AddressActivity;
 import com.douya.XiaoDianPuXM.activity.LoginActivity;
 import com.douya.XiaoDianPuXM.api.API;
 import com.douya.XiaoDianPuXM.bean.CancelBean;
@@ -40,11 +41,9 @@ import okhttp3.Call;
 public class Fragment_my extends Fragment {
     private ImageView iv_header;
     private TextView tv_login;
-    private TextView tv_indent;
-    private TextView tv_moreIntent;
+    private LinearLayout linear_address;
     private View popView;
     private PopupWindow mWindow;
-    private boolean isLogin;
     private Button bt_cancel;
     private String login_cancel;
 
@@ -79,6 +78,20 @@ public class Fragment_my extends Fragment {
                 }
             }
         });
+        //我的地址的点击监听
+        linear_address.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //判断当前是否登录
+                if(API.sp.getBoolean("isLogin", false)){
+                    //跳转到地址页面
+                    startActivity(new Intent(getContext(), AddressActivity.class));
+                }else {
+                    //进行页面跳转到登录页面
+                    startActivity(new Intent(getContext(), LoginActivity.class));
+                }
+            }
+        });
         return view;
     }
 
@@ -86,8 +99,7 @@ public class Fragment_my extends Fragment {
     private void initView(View view) {
         iv_header = (ImageView) view.findViewById(R.id.iv_header);
         tv_login = (TextView) view.findViewById(R.id.tv_login);
-        tv_indent = (TextView) view.findViewById(R.id.tv_indent);
-        tv_moreIntent = (TextView) view.findViewById(R.id.tv_moreIntent);
+        linear_address = (LinearLayout) view.findViewById(R.id.linear_address);
         popView = LayoutInflater.from(getContext()).inflate(R.layout.popupwindow_view, null);
         //创建PopupWindow
         mWindow = new PopupWindow(popView, LinearLayout.LayoutParams.MATCH_PARENT, 100);
